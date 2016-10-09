@@ -1,0 +1,30 @@
+<com.example.view.SlidingMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sunshine="http://schemas.android.com/apk/res/com.example.indoordemo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/sildingMenu"
+    android:scrollbars="none" 
+    sunshine:rightPadding ="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"  
+        android:layout_height="fill_parent"  
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_menu" />
+
+        <LinearLayout  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:background="@drawable/qq" >  
+            <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toggleMenu"
+                android:text="change"/>
+        </LinearLayout>  
+    </LinearLayout>
+
+</com.example.view.SlidingMenu>
